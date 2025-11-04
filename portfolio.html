@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AI Optimalisatie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* [De Zelfde Stijl als Home/Over Ons] */
+        :root {
+            --primary-color: #007bff; 
+            --secondary-color: #121212; 
+            --accent-color: #00ffc4; 
+            --text-light: #f4f4f4;
+            --text-dark: #333333;
+            --font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 1.6em;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        .nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        
+        /* Portfolio Sectie Stijl */
+        .project-section {
+            padding: 80px 10%;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .project-section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .project-card {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--accent-color); /* Cyaan lijn */
+        }
+
+        .project-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Twee kolommen */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 5%;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>eXcelleRes Labs</h1>
+        <nav class="nav">
+    <a href="excelleres-labs.html">HOME</a>
+    <a href="over-ons.html">OVER ONS</a>
+    <a href="excelleres-labs.html#diensten">DIENSTEN</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="project-section">
+        <h2>Portfolio: AI-Generator voor Snelheidsoptimalisatie</h2>
+        
+        <div class="project-card">
+            <h3>Project Doel: Data Vertaald naar Win-Strategie</h3>
+            <p>Dit is mijn meest ambitieuze project, direct geïnspireerd door de data-uitdagingen van de Formule 1. Het demonstreert mijn bekwaamheid in **Machine Learning, data-visualisatie en Agile implementatie**.</p>
+            
+            <div class="details-grid">
+                <div>
+                    <h4>Technologieën</h4>
+                    <ul>
+                        <li>**Front-end:** HTML, CSS, JavaScript (React/Vue [toekomstig])</li>
+                        <li>**Back-end:** Python (voor Machine Learning)</li>
+                        <li>**Database:** SQL/NoSQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Toepassing (F1 Relatie)</h4>
+                    <ul>
+                        <li>**Race Strategie:** Voorspellen van bandenslijtage en optimale pitstop-tijden.</li>
+                        <li>**Efficiëntie:** Automatisch genereren van de meest effectieve SD-takenlijsten (Agile).</li>
+                        <li>**Focus:** Levert concrete, meetbare data om de prestaties te verbeteren.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="margin-top: 30px; text-align: center;">
+                <a href="#" class="cta-button" style="background-color: var(--primary-color); color: white;">Bekijk Live Demo (Binnenkort)</a>
+            </p>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 eXcelleRes Labs. Coderen is Snelheid.</p>
+    </footer>
+
+</body>
+</html>
