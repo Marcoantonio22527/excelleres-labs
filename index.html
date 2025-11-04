@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eXcelleRes Labs - High-Performance Systemen</title>
+    <title>eXcelleRes Labs - High-Performance SD Systems</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS voor de Dynamische, High-Tech Stijl */
+        /* ... CSS code (dit hoeft u niet te veranderen) ... */
         :root {
-            --primary-color: #007bff; /* Blauw - Snelheid/Precisie */
-            --secondary-color: #121212; /* Diep Zwart - F1 Look */
-            --accent-color: #00ffc4; /* Groen/Cyaan - AI/Innovatie */
+            --primary-color: #007bff; 
+            --secondary-color: #121212; 
+            --accent-color: #00ffc4; 
             --text-light: #f4f4f4;
             --text-dark: #333333;
             --font-family: 'Montserrat', sans-serif;
@@ -22,10 +22,8 @@
             padding: 0;
             line-height: 1.6;
             color: var(--text-dark);
-            background-color: #ffffff;
         }
 
-        /* Navigatie: Strak en Donker */
         .header {
             background-color: var(--secondary-color);
             color: var(--text-light);
@@ -33,12 +31,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
         .header h1 {
             font-size: 1.6em;
             margin: 0;
-            color: var(--accent-color); /* Labs-kleur */
+            color: var(--accent-color);
         }
 
         .nav a {
@@ -48,82 +47,85 @@
             font-weight: 500;
         }
 
-        /* Hero Sectie: Directe F1 Connectie */
         .hero {
-            background: linear-gradient(135deg, var(--secondary-color), #343a40);
+            background-color: var(--secondary-color);
             color: var(--text-light);
+            padding: 100px 5%;
             text-align: center;
-            padding: 150px 5% 100px;
+            border-bottom: 5px solid var(--primary-color);
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 3em;
-            margin-bottom: 15px;
-            color: var(--primary-color);
+            margin-bottom: 20px;
             text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-color);
         }
 
         .hero p {
-            max-width: 800px;
-            margin: 0 auto 40px;
             font-size: 1.2em;
+            margin-bottom: 40px;
         }
 
         .cta-button {
-            background-color: var(--accent-color);
-            color: var(--secondary-color);
-            padding: 14px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
             display: inline-block;
-            transition: background-color 0.3s;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .cta-button:hover {
-            background-color: #00e0a5;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
         }
 
-        /* Diensten Sectie */
         .section {
-            padding: 80px 5%;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
         }
 
-        .section h3 {
+        .section h2 {
             font-size: 2.2em;
             color: var(--primary-color);
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
-        .services-grid {
+        .expertise-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
         }
 
-        .service-item {
-            background: #f8f9fa;
+        .expertise-card {
+            background-color: #f8f9fa;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 8px;
             text-align: left;
-            border-top: 5px solid var(--accent-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--accent-color);
         }
 
-        .service-item h4 {
+        .expertise-card h3 {
             color: var(--secondary-color);
-            font-size: 1.4em;
+            font-size: 1.5em;
             margin-top: 0;
         }
 
-        /* Footer */
         .footer {
             background-color: var(--secondary-color);
             color: var(--text-light);
             text-align: center;
             padding: 40px 5%;
             font-size: 0.9em;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -131,47 +133,47 @@
 
     <header class="header">
         <h1>eXcelleRes Labs</h1>
-<nav class="nav">
-    <a href="index.html">HOME</a>
-    <a href="over-ons.html">OVER ONS</a>
-    <a href="index.html#diensten">DIENSTEN</a>
-    <a href="portfolio.html">PORTFOLIO</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="over-ons.html">ABOUT US</a>
+            <a href="index.html#diensten">SERVICES</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
     </header>
 
     <section class="hero">
-        <h2>Van SD-Studie naar F1: Snelheid is Alles</h2>
-        <p>
-            eXcelleRes Labs ontwikkelt **AI en Agile systemen** die de precisie van een Formule 1 pitstop evenaren. Dit is mijn bewijs van technische vaardigheid, direct vanuit mijn SD-studie.
-        </p>
-        <a href="portfolio.html" class="cta-button">Bekijk Mijn Portfolio Projecten</a>    
-    
+        <h1>Software Development for Absolute Speed.</h1>
+        <p>Ready to Optimize ICT Systems for High-Performance Teams.</p>
+        <a href="portfolio.html" class="cta-button">View My Portfolio Projects</a>
     </section>
+
     <section class="section" id="diensten">
-        <h3>Mijn Expertise: De Drie Pilaren van Snelheid</h3>
-        <div class="services-grid">
-            <div class="service-item">
-                <h4>1. Kunstmatige Intelligentie (AI)</h4>
-                <p>Ontwikkelen van voorspellende modellen voor real-time data-analyse—essentieel voor racestrategie.</p>
+        <h2>My Expertise: The Three Pillars of Velocity</h2>
+        
+        <div class="expertise-grid">
+            
+            <div class="expertise-card">
+                <h3>AI & Data Analysis (Precision)</h3>
+                <p>Applying Machine Learning principles to transform raw data into predictive models, optimizing performance and strategic decision-making in real-time. My focus is on turning data into a competitive advantage.</p>
             </div>
-            <div class="service-item">
-                <h4>2. High-Performance Agile</h4>
-                <p>Implementatie van snelle, foutloze ontwikkelmethoden voor software, gericht op maximale efficiëntie.</p>
+            
+            <div class="expertise-card">
+                <h3>Agile & Scrum Methodologies (Efficiency)</h3>
+                <p>Proficient in efficient project management and team collaboration using Scrum and Agile frameworks. Ensuring rapid deployment, continuous integration (CI/CD), and adaptive development cycles—the core of F1 speed.</p>
             </div>
-            <div class="service-item">
-                <h4>3. Full-Stack Web Development</h4>
-                <p>Het bouwen van robuuste en schaalbare webapplicaties (de basis voor apps, websites, en data-visualisatie).</p>
+            
+            <div class="expertise-card">
+                <h3>Full Stack Web Development (Implementation)</h3>
+                <p>Competent in developing robust, scalable applications from front-end design (HTML, CSS, JavaScript) to back-end logic. Focused on creating intuitive interfaces for complex engineering data.</p>
             </div>
+
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 eXcelleRes Labs. Aangepast met de F1-Mindset voor de Sponsorstrategie.</p>
+        <p>&copy; 2025 eXcelleRes Labs. Coding Ambition for High-Performance.</p>
     </footer>
 
 </body>
-
 </html>
-
-
