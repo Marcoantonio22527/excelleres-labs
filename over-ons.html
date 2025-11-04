@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over Ons - De F1 Ambitie</title>
+    <title>Portfolio - AI Optimization</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        /* [DEZELFDE STIJL ALS DE INDEX.HTML CODE, MAAR NU ALLEEN DE BASIS] */
+        /* [CSS code (dit hoeft u niet te veranderen)] */
         :root {
             --primary-color: #007bff; 
             --secondary-color: #121212; 
@@ -47,26 +47,42 @@
             font-weight: 500;
         }
         
-        /* Sectie voor de Over Ons Pagina */
-        .content-section {
+        /* Portfolio Sectie Stijl */
+        .project-section {
             padding: 80px 10%;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             text-align: left;
         }
 
-        .content-section h2 {
+        .project-section h2 {
             font-size: 2.5em;
             color: var(--primary-color);
             margin-bottom: 30px;
+            text-align: center;
         }
         
-        .content-section h4 {
-            font-size: 1.4em;
-            color: var(--secondary-color);
-            margin-top: 40px;
+        .project-card {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--accent-color); /* Cyan line */
         }
 
+        .project-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Twee kolommen */
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
         .footer {
             background-color: var(--secondary-color);
             color: var(--text-light);
@@ -81,35 +97,51 @@
 
     <header class="header">
         <h1>eXcelleRes Labs</h1>
-<nav class="nav">
-    <a href="index.html">HOME</a>
-    <a href="over-ons.html">OVER ONS</a>
-    <a href="index.html#diensten">DIENSTEN</a>
-    <a href="portfolio.html">PORTFOLIO</a>
-    <a href="contact.html">CONTACT</a>
-</nav>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="over-ons.html">ABOUT US</a>
+            <a href="index.html#diensten">SERVICES</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
     </header>
 
-    <section class="content-section">
-        <h2>Mijn Missie: De SD-Studie Direct Vertalen naar de F1-Pitstraat</h2>
+    <section class="project-section">
+        <h2>Portfolio: AI-Generator for Speed Optimization</h2>
         
-        <p>Dit portfolio, eXcelleRes Labs, is het bewijs van mijn toewijding. Elk project is ontworpen met de snelheid, efficiëntie en precisie die nodig is om te slagen in de Formule 1-wereld.</p>
-
-        <h4>Focus op Red Bull Racing & Technologie</h4>
-        <p>Mijn ultieme doel is om de ICT-systemen van een F1-team, zoals Red Bull Racing, te optimaliseren. Met mijn kennis van **Software Development (SD)** en de focus op **AI-integratie**, ben ik klaar om direct bij te dragen aan het team dat streeft naar de snelste rondetijden. Ik lever niet alleen code, ik lever **snelheid**.</p>
+        <div class="project-card">
+            <h3>Project Goal: Data Translated to Winning Strategy</h3>
+            <p>This is my most ambitious project, directly inspired by the data challenges in Formula 1. It demonstrates my proficiency in **Machine Learning, data visualization, and Agile implementation**.</p>
+            
+            <div class="details-grid">
+                <div>
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>**Front-end:** HTML, CSS, JavaScript (React/Vue [future])</li>
+                        <li>**Back-end:** Python (for Machine Learning)</li>
+                        <li>**Database:** SQL/NoSQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Application (F1 Relevance)</h4>
+                    <ul>
+                        <li>**Race Strategy:** Predicting tire wear and optimal pit stop times.</li>
+                        <li>**Efficiency:** Automatically generating the most effective SD task lists (Agile).</li>
+                        <li>**Focus:** Delivers concrete, measurable data to enhance performance.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="margin-top: 30px; text-align: center;">
+                <a href="#" class="cta-button" style="background-color: var(--primary-color); color: white;">View Live Demo (Coming Soon)</a>
+            </p>
+        </div>
         
-        <h4>De Strategie: Sponsoring & Familie</h4>
-        <p>Dit is meer dan een carrière; het is een familievisie. De inkomsten en de technologie die ik ontwikkel voor eXcelleRes Labs maken de weg vrij voor de sponsoring van het F1-team. **Zodat** we niet alleen een baan hebben, maar ook de financiële middelen om de familie in staat te stellen mee te reizen en de teamervaring te delen (vluchten, hotel, passen).</p>
-
-        <h4>Mijn Kwalificatie (SD-Studie)</h4>
-        <p>Mijn opleiding en specialisatie in SD leggen de nadruk op Agile development en data-systemen. Dit is de basis om binnen de F1-wereld om te gaan met de enorme hoeveelheid data en de noodzaak tot snelle, foutloze beslissingen.</p>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 eXcelleRes Labs. De Ambitie om in de F1 te Coderen.</p>
+        <p>&copy; 2025 eXcelleRes Labs. Coding is Speed.</p>
     </footer>
 
 </body>
-
 </html>
-
